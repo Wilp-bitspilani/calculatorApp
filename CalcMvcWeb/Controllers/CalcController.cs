@@ -61,5 +61,14 @@ namespace CalcMvcWeb.Controllers
             model.Result = result;
             return View("Process", model);
         }
+
+        [HttpPost]
+        public ActionResult Square(CalcViewModel model)
+        {
+            var cs = new CalcService();
+            var result = cs.UnsafeDivide(model.Number1, model.Number2);
+            model.Result = result;
+            return View("Process", model);
+        }
     }
 }
