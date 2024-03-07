@@ -12,7 +12,6 @@ namespace CalcMvcWeb.Tests
         [Theory(DisplayName = "Add Numbers")]
         [InlineData(4, 5, 9)]
         [InlineData(2, 3, 5)]
-        [InlineData(2, 3, 10)]
         public void TestAddNumbers(int x, int y, int expectedResult)
         {
             // 1. Arrange
